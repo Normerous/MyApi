@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const { JWT_SECRET, PORT } = require('./config');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 50073;
 
 const uri = process.env.URL_MONGODB;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }
