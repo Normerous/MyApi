@@ -29,7 +29,9 @@ app.use(express());
 
 app.use('/user', user);
 app.use('/exercise', exercise);
-
+app.get('/', (req, res) => {
+    res.send('5555555')
+})
 app.listen(port, () => {
     console.log(`Server is running on port ${port} `);
 })
